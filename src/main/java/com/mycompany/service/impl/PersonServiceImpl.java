@@ -36,6 +36,10 @@ public class PersonServiceImpl implements PersonService {
 	@Override
 	public Person getPersonDetails(Long personId) {
 		Map<Long, Person> personMap = getPersonMap();
+		logger.info("Checking for person in the request map: "+personId);
+		if(personMap.get(personId) == null) {
+			throw new InvalidException(400, "Key unavailable", "Key Not available in the list, call /persons to check the list");
+		}
 		return personMap.get(personId);
 	}
 
