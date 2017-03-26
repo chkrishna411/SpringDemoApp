@@ -1,6 +1,3 @@
 spring:
-  cloud:
-    config:
-      uri: file:/Users/simham/Documents/springapp.properties
-
-      
+  application:
+    name: SpringDemoApp

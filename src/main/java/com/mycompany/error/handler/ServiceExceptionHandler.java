@@ -26,7 +26,9 @@ public class ServiceExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler(Throwable.class)
 	@ResponseBody
 	ResponseEntity<Object> handlerControllerException(HttpServletRequest req, Throwable ex) {
-		logger.info("Central exception handling preparing the error response");
+		
+		logger.info("Central exception handling preparing the error response:"+ex.getMessage());
+		ex.printStackTrace();
 		ErrorResponse errorResponse = new ErrorResponse(500, "Internal Server Error", "Server error Occurred");
 		if(ex instanceof InvalidException) {
 			InvalidException exception = (InvalidException)ex;
