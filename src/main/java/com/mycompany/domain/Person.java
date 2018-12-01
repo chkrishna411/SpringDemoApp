@@ -2,18 +2,15 @@ package com.mycompany.domain;
 
 public class Person {
 
-	
 	private Long id;
-	
+
 	private String firstName;
-	
+
 	private String lastName;
-	
+
 	private Integer age;
-	
+
 	private Double salary;
-	
-	
 
 	public Person() {
 		super();
@@ -26,6 +23,11 @@ public class Person {
 		this.lastName = lastName;
 		this.age = age;
 		this.salary = salary;
+	}
+
+	public Person(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
 
 	public Long getId() {
@@ -70,11 +72,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", salary="
-				+ salary + "]";
+		return "firstName: " + firstName + ", lastName: " + lastName;
 	}
-	
-	
-	
-	
+
 }
