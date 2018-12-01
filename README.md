@@ -15,7 +15,7 @@ Spring Boot App for performing CRUD operations. A sample person data is availabl
 <b> With Local Data: </b>
 
 By default sprint boot starts with local profile. No need to setup the data. 
-Sample DataSet will be loaded during startup using 
+Sample DataSet will be loaded during startup. 
 
 <b> With AWS Connectivity: </b>
 
