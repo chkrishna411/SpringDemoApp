@@ -4,14 +4,14 @@ A Simple Spring Boot App to run on Docker Containers.
 
 Spring Boot App for performing CRUD operations. A sample person data is available in the following form.
 
-<b>
-/person/{id}		for GET by id. <\br>
-/persons			for GET All persons <\br>
-/person			for PUT operation, need to send Person object as RequestBody <\br>
-/person/{id}		for DELETE by id <\br>
-/persons			for POST operation, to load sample persons. <\br>
-</b>
 
+/person/{id}		for GET by id.  <br/>
+/persons			for GET All persons  <br/>
+/person			for PUT operation, need to send Person object as RequestBody  <br/>
+/person/{id}		for DELETE by id  <br/>
+/persons			for POST operation, to load sample persons.  <br/>
+
+<br/>
 <b> With Local Data: </b>
 
 By default sprint boot starts with local profile. No need to setup the data. 
@@ -34,8 +34,8 @@ System Properties Needed if interested in connecting to aws: <br/>
  
  instead of system properties, you can also pass aws credentials as ENVIRONMENT variables. use the following names
  
- export AWS_ACCESS_KEY_ID=$accessKey   <\br>
- export AWS_SECRET_ACCESS_KEY=$secretKey <\br>
- export AWS_REGION=$region <\br>
+ export AWS_ACCESS_KEY_ID=$accessKey    <br/>
+ export AWS_SECRET_ACCESS_KEY=$secretKey  <br/>
+ export AWS_REGION=$region  <br/>
  
  Once after checking out the code, run the docker build command inside the project, make sure your docker is running.
