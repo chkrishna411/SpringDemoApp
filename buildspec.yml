@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk11
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo BUILD STARTED ON `date`
+      - echo BUILD DIRECTORY $CODEBUILD_SRC_DIR
+      - mvn install
+  post_build:
+    commands:
+      - echo BUILD COMPLETED ON `date`
+artifacts:
+  files:
+    - target/SpringDemoApp-1.0.jar
